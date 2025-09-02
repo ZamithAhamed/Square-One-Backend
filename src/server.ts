@@ -8,7 +8,7 @@ import { requireAuth } from './middleware/auth';
 import { csrfProtect } from './middleware/csrf';
 import { errorHandler } from './middleware/error';
 
-import authRouter from './routes/auth.js';
+import authRouter from './routes/auth';
 import patientsRouter from './routes/patients.js';
 import notesRouter from './routes/notes.js';
 import apptsRouter from './routes/appointments.js';
