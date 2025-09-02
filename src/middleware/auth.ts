@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
-import { JWT_ACCESS_SECRET } from '../config/env';
+import { JWT_ACCESS_SECRET } from '../config/env.js';
 
 
 type JwtUser = { id: number };

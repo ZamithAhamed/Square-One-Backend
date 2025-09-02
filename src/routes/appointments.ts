@@ -1,10 +1,10 @@
 import { Router } from 'express';
-import { pool } from '../db';
+import { pool } from '../db.js';
 import { z } from 'zod';
-import { sendAppointmentConfirmationEmail } from '../utils/mailer';
+import { sendAppointmentConfirmationEmail } from '../utils/mailer.js';
 import Stripe from 'stripe';
-import { STRIPE_SECRET_KEY } from '../config/env';
-import { toMinor, stripe } from '../integrations/stripe';
+import { STRIPE_SECRET_KEY } from '../config/env.js';
+import { toMinor, stripe } from '../integrations/stripe.js';
 
 
 const router = Router();

@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { pool } from '../db.js';
 import { z } from 'zod';
 import { toCSV } from '../util/csv.js';
-import { sendPaymentReceiptEmail } from '../utils/mailer';
+import { sendPaymentReceiptEmail } from '../utils/mailer.js';
 
 const router = Router();
 
